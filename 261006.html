@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>261006</title>
+
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 800px;
+			table-layout: fixed;
+		}
+
+		tr { height:50px; }
+		th, td { text-align:center; vertical-align: middle; }
+	</style>
+</head>
+<body>
+
+<h3> 행, 열 통합하기</h3>
+<hr>
+
+<table border="1">
+	<caption><strong>시간표</strong></caption>
+
+	<tr>
+		<th>월</th>
+		<th>화</th>
+		<th>수</th>
+		<th>목</th>
+		<th>금</th>
+	</tr>
+
+	<tr>
+		<td rowspan="2">컴퓨터과학과기초</td>
+		<td rowspan="2">전기전자회로</td>
+		<td>컴퓨터과학과기초</td>
+		<td rowspan="2" style="background-color: yellow;">공강</td>
+		<td rowspan="8" style="background-color: yellow;">공강</td>
+	</tr>
+
+	<tr>
+		<td>공강</td>
+	</tr>
+
+
+	<tr>
+		<td rowspan="2">인생이란</td>
+		<td rowspan="2" style="background-color:yellow;">공강</td>
+		<td>인생이란</td>
+		<td>전기전자회로</td>
+	</tr>
+
+	<tr>
+		<td style="background-color: yellow;">공강</td>
+		<td style="background-color: yellow;">공강</td>
+	</tr>
+
+	<tr>
+		<td colspan="4">점심시간</td>
+	</tr>
+
+	<tr>
+		<td rowspan="2" height="40">웹프로그래밍기초</td>
+		<td rowspan="2">물리화학</td>
+		<td>웹프로그래밍기초</td>
+		<td rowspan="2">재료평가및분석</td>
+	</tr>
+
+	<tr>
+		<td rowspan="2" height="40" style="background-color: yellow;">공강</td>
+	</tr>
+
+	<tr>
+		<td style="background-color: yellow;">공강</td>
+		<td>재료평가및분석</td>
+		<td>물리화학</td>
+	</tr>
+
+
+</table>
+
+
+<form action="https://search.naver.com/search.naver" method="get">
+	검색하고 싶은 단어를 입력하세요
+	<input name="query" type="text">
+	<button type="submit">검색</button>
+</form>
+
+<br>
+
+<form action="login.html" method="post">
+	
+	<table>
+		<tr>
+			<th>아이디</th>
+			<td><input name="id" type="text"></td>
+		</tr>
+
+		<tr>
+			<th>비밀번호</th>
+			<td><input name="password" type="password"></td>
+		</tr>
+
+		<tr>
+			<td colspan="2" style="text-align: center;">
+				<button type="submit">로그인</button>
+			</td>
+		</tr>
+	</table>
+</form>
+
+
+</body>
+</html>
